@@ -2,7 +2,7 @@
 //  Histograma.c
 //  Actividad 3 E2
 //
-//  Created by Christian Alberto Dalma Schults, Octavio Iván Garduza Labastida, Luis Armando Revilla and Antonio Junco de Haas on 04/09/20.
+//  Created by Christian Alberto Dalma Schults, Octavio Iván Garduza Labastida, Luis Armando Revilla and Antonio Junco de Haas on 02/09/20.
 //  Copyright © 2020 Christian Alberto Dalma Schultz. All rights reserved.
 //
 
