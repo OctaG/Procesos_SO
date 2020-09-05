@@ -124,3 +124,100 @@ int list_length(node_t *head){}
 
 ### Arbol de Archivos
 
+#### Descripción
+Implementación en C de un programa que parta desde un directorio y decienda por el arbol de archivos registrando los tamaños de los archivos que encuentre
+
+#### Metodos utilizados
+
+###### listFilesRecursively()
+Comienza  abrir los directorios usando funciones recursivas
+
+```C
+long long int* listFilesRecursively(char *path, long long int * vector);
+```
+
+###### statFileType()
+Regresa el tipo de archivo
+
+```C
+unsigned char statFileType(char *fname);
+```
+
+###### stat()
+Creacion de estructura de stats
+
+```C
+int stat(const char*path, struct stat *buf);
+```
+
+###### revisarUrnas()
+Continua la creacion de urnas y crea valores para ellas 
+
+```C
+long long int *revisarUrnas( long long int * vector, int valor);
+```
+
+###### getFullName()
+Toma todo el directorio
+
+```C
+char *getFullName(char *ruta, struct dirent *ent);
+```
+
+###### printVector()
+Hace impresion del vector de los valores
+
+```C
+void printVector(long long int *vector);
+```
+
+###### getUrna()
+Funcion get para regresar la urna
+
+```C
+long long int getUrna(long long int *vector);
+```
+
+###### getNumero()
+Funcion que regresa la cantidad de urnas
+
+```C
+long long int getNumero(long long int *vector);
+```
+
+
+###### setNumero()
+Genera un nuevo numero de urnas colectadas con set
+
+```C
+long long int *setNumero(long long int *vector, int nuevonum);
+```
+
+###### clearNew()
+Funcion para prevenir fallas
+
+```C
+long long int *clearNew(long long int *vector, int lastvalue);
+```
+
+###### accumulate()
+crea la acumulacion de valores
+
+```C
+long long int *accumulate(long long int *vector, int position);
+```
+
+###### maximoArchivos()
+reconoce a la urna con la mayor cantidad de archivos
+
+```C
+int maximoArchivos (long long int *vector);
+```
+
+###### imprimirHistograma()
+Imprime el hisotriagrama 
+
+```C
+void imprimirHistograma(long long int *vector);
+```
+
